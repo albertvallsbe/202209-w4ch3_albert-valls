@@ -9,14 +9,13 @@ const App = () => {
     <>
       <div className="container">
         <Info />
-        <Keyboard />
-        <div className="actions">
-          <Actions />
-          <Display />
-          {/* <!-- El botón de llamar debe tener la clase "active" cuando -->
-        <!-- el número de teléfono tiene 9 cifras -->
-        <!-- Sólo se tiene que ver un botón u otro --> */}
-        </div>
+        <main className="phone">
+          <Keyboard />
+          <div className="actions">
+            <Display />
+            <Actions />
+          </div>
+        </main>
       </div>
     </>
   );

@@ -5,12 +5,14 @@ import Info from "./components/Info/Info";
 import Keyboard from "./components/Keyboard/Keyboard";
 
 const App = () => {
+  const keyboardAction = () => {};
+
   return (
     <>
       <div className="container">
         <Info />
         <main className="phone">
-          <Keyboard />
+          <Keyboard action={keyboardAction} />
           <div className="actions">
             <Display />
             <Actions />
